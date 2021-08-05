@@ -1,0 +1,24 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: gdlq11
+    url: jdbc:mysql://112.74.59.110:3306/gdzz?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+
+    # thymeleaf
+    thymeleaf:
+      # 关闭缓存
+      cache: false
+
+
+mybatis:
+  type-aliases-package: cn.edu.guet.bean
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+#showSql
+logging:
+  level:
+    cn.edu.guet: DEBUG
+
